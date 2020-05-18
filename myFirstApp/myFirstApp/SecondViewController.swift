@@ -107,8 +107,9 @@ class SecondViewController: UIViewController {
         for index in 0...j {
             area += (XCoordinateArray[j] + XCoordinateArray[index]) * (YCoordinateArray[j] - YCoordinateArray[index])
             j = index
-            area = area / 2
         }
+        area = area / 2
+        print(area)
         result.text = "Area: \(area) cm2"
         textField.text = ""
         area = 0
